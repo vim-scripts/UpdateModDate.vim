@@ -1,11 +1,11 @@
-" UpdateModDate.vim Plugin.
+" UpdateModDate.vim Plugin, version 1.2
 " It is used to update a timestamp within a file whenever it is saved
 " by vim.
 "
 " Written Sun Nov  7 21:48:44 UTC 2004 by Greek0
 " This file is placed under the public domain, do with it whatever you want.
 "
-" Last Modified: Sun Nov  7 22:00:02 UTC 2004		// %DATE_TAG% 
+" Last Modified: Mon Nov  8 20:31:19 UTC 2004		// %DATE_TAG% 
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -20,7 +20,7 @@ let s:UMD_DateToken = '%DATE_TAG%'
 " The pattern determinates which part of the current text should be replaced
 " with the new date.
 let s:UMD_DatePattern = 
-		\ '\w\{3\}\s\w\{3\}\s\+\d\+\s\+\d\+:\d\+:\d\+\s\+UTC\s\+\d\+'
+		\ '\w\+\s\+\w\+\s\+\d\+\s\+\d\{2\}:\d\{2\}:\d\{2\}\s\+UTC\s\+\d\+'
 
 " This is the command being used to gain the new date. If you change it you'll
 " probably have to adept the UMD_DatePattern regexp too.
