@@ -1,0 +1,11 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1124
+
+This script uses an autocmd hook to run a function whenever a file is saved.
+The function then looks if it finds a special token (by default %DATE_TAG%) within the file, and if it's found, a datestamp on the same line is updated to the current date.
+
+This script will run on all systems that provide date(1), so it should work on unix systems, as well as on cygwin.
+
+If no special token is found, nothing is done at all.
+If there are multiple tokens within the file, only the first one from the beginning of the buffer will be updated.
+
+The date format and the special token are fully configureable.
